@@ -4,8 +4,8 @@ In deze opdracht ga je in tweetallen of alleen een soort kruising maken tussen e
 
 ## Deadlines:
 
-*   **27-11-2025 (21:00):** [Tussenopdracht 1](tussenopdracht%201.md)
-*   **11-12-2025 (21:00):** [Tussenopdracht 2](tussenopdracht%202.md)
+*   **1-12-2025 (21:00):** [Tussenopdracht 1](tussenopdracht%201.md)
+*   **15-12-2025 (21:00):** [Tussenopdracht 2](tussenopdracht%202.md)
 *   **8-1-2026 (21:00):** [Eindopdracht](eindopdracht.md)
 
 ## Cijferopbouw:
