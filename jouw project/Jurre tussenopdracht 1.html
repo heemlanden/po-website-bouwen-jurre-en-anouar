@@ -2,18 +2,27 @@
 <head>
     <title>Profielpagina Jurre</title>
 <style>
-    .TextBox {
-        position: relative;
-        width: 500px;
-        color: red;
-        background-color: lightgray;
+    .terugknop {
+        background-color: rgb(65, 207, 65);
+        color: black !important;
+        border-style: none;
+        font-weight: bold;
+        position: absolute;
+        width: 120px;
         height: 50px;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        font-weight: bolder;
-        text-decoration: underline;
+        align-content: center;
+        text-align: center;
+        font-size: large;
+        font-family: sans-serif;
+        border-radius: 20px;
+        text-decoration: none !important;
     }
+
+    .terugknop:hover {
+        background-color: rgb(50, 179, 50);
+        cursor: pointer;
+    }
+
 </style>
 </head>
 <body style="background-color: lightgreen;">
@@ -32,12 +41,11 @@
     </ul>
     <div style="background-color: black; width: 300px;">
         <h3 style="color: white; font-family: Verdana;">Leuke foto</h3>
-        <img src="images/Mooie foto.jpg" style="width: 300px;">
+        <img src="images/Mooie foto.jpg" class="myimage" style="width: 300px;">
     </div>
-    <div style="position: absolute; left: 400px; top: 50px; width: 500px;">
-        <div class="TextBox">iets</div>
-        <div class="TextBox" style="top: 20px;">iets2</div>
-        <div class="TextBox" style="top: 40px;">iets3</div>
+    <div style="position: absolute; right: 175px; top: 50px;">
+        <a href="Startpagina.html" class="terugknop">Terug</a>
+        <a href="Jurre tussenopdracht 2.html" class="terugknop" style="position: absolute; top: 80px">Pagina 2</a>
     </div>
 </body>
 </html>
