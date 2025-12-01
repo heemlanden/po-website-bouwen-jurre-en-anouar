@@ -1,0 +1,32 @@
+.normal
+{
+    background-color: rgb(146, 146, 235);
+}
+
+.text1
+{
+    font-family: "Roboto", sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+.text2
+{
+    font-family: "Montserrat", sans-serif;
+}
+
+.backgroundcolor2
+{
+    background-color: aqua;
+    width: 50%;
+    outline-style: solid;
+    
+
+}
+.gamesPadding
+{
+    padding-left: 30;
+}
+.emptySpace
+{
+    font-size: 0.1px;
+}
