@@ -1,0 +1,47 @@
+body {
+    background-color: lightgreen;
+}
+
+.terugknop {
+    background-color: rgb(65, 207, 65);
+    color: black !important;
+    border-style: none;
+    font-weight: bold;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    align-content: center;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    border-radius: 20px;
+    text-decoration: none !important;
+    position: absolute;
+}
+
+.terugknop:hover {
+    background-color: rgb(50, 179, 50);
+    cursor: pointer;
+}
+
+.text1 {
+    color: rgb(0, 107, 0);
+    font-family: Verdana;
+}
+
+.div1 {
+    background-color: black;
+    width: 300px;
+}
+
+.foto1 {
+    width: 300px;
+}
+
+.text2 {
+    color: white; font-family: Verdana;
+}
+
+.div2 {
+    position: absolute; right: 175px; top: 50px;
+}
