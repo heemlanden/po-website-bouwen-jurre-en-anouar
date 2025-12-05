@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(255, 181, 21);
+}
+
+.paginaknop {
+        background-color: rgb(220, 153, 6);
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        align-content: center;
+        text-decoration: none !important;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+        font-family: Arial;
+        border-radius: 15px;
+    }
