@@ -24,7 +24,34 @@
     </div>
     <div class="div2">
         <a href="index.html" class="terugknop">Terug</a>
-        <a href="Jurre tussenopdracht 2.html" class="terugknop" style="top: 60px">Pagina 2</a>
+        <a onclick="transition()" class="terugknop" style="top: 60px">Pagina 2</a>
     </div>
+
+    <div id="spinnercontainer" class="spinnercontainer">
+        <span id="spinner" class="spinner"></span>
+        <img class="transimg" src="images/magister.ico">
+    </div>
+    <div id="transition" class="transition"></div>
+    
+    <script>
+        function transition() {
+            div = document.getElementById('transition');
+            container = document.getElementById('spinnercontainer')
+            container.style.top = "50%";
+            div.style.height = "100%"
+            setTimeout(() => {
+                document.location.href = "Jurre tussenopdracht 2.html";
+            }, 2500);
+        }
+        
+
+        var spin = 0
+        setInterval(() => {
+            spinner = document.getElementById('spinner');
+            spin = spin + 5
+            spinner.style.rotate = spin + "deg"
+        }, 15);
+
+    </script>
 </body>
 </html>

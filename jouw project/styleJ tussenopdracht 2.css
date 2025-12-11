@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-color: lightskyblue;
+    background-color: rgb(112, 197, 250);
 }
 
 .magisterfoto {
@@ -46,4 +46,15 @@ body {
     position: absolute;
     right: 175px;
     top: 50px;
+}
+
+.transition {
+    position: absolute;
+    transition: height ease-in-out 2s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: lightskyblue;
 }
