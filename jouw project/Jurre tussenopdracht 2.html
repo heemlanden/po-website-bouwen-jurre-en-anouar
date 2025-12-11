@@ -27,12 +27,25 @@
     <a href="index.html" class="terugknop" style="top: 60px">Home</a>
     </div>
     <div id="transition2" class="transition"></div>
+    <div id="spinnercontainer" class="spinnercontainer">
+        <span id="spinner" class="spinner"></span>
+        <img class="transimg" src="images/magister.ico">
+    </div>
 
     <script>
         div = document.getElementById('transition2');
+        container = document.getElementById('spinnercontainer')
         setTimeout(() => {
-            div.style.height = 0;
+            container.style.top = "-100%";
+            div.style.height = "0"
         }, 10);
+
+        var spin = 0
+        spinner = document.getElementById('spinner');
+        setInterval(() => {
+            spin = spin + 5
+            spinner.style.rotate = spin + "deg"
+        }, 15);
 
     </script>
 </body>
