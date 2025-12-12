@@ -4,6 +4,7 @@ body {
 
 .terugknop {
     background-color: rgb(65, 207, 65);
+    border: solid 2px black !important;
     color: black !important;
     border-style: none;
     font-weight: bold;

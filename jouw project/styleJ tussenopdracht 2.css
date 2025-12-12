@@ -10,6 +10,7 @@ body {
 .textdiv {
     background-color: rgb(0, 174, 255);
     width: 300px;
+    padding: 10px;
     position: relative;
     border-style: solid;
     border-radius: 20px;
@@ -18,6 +19,7 @@ body {
 
 .terugknop {
     background-color: rgb(0, 174, 255);
+    border: solid 2px black !important;
     color: black !important;
     border-style: none;
     font-weight: bold;
@@ -90,4 +92,8 @@ body {
     top: -125%;
     left: 50%;
     transform: translate(-45%);
+}
+
+.table1, td, th{
+    border: solid 2px rgb(0, 86, 139);
 }
