@@ -57,7 +57,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    transition: height ease-in-out 1.5s;
+    transition: height ease-in-out 1s;
 }
 
 .spinner {
@@ -82,7 +82,7 @@ body {
     text-align: center;
     position: absolute;
     left: 0;
-    transition: top 3.4s;
+    transition: top ease-in 1s;
 }
 
 .transimg {
