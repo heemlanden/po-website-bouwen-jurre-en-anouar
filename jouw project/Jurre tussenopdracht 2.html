@@ -36,7 +36,7 @@
     </div>
     
     <div class="div1">
-    <a href="Jurre tussenopdracht 1.html" class="terugknop">Terug</a>
+    <a onclick="transition2()" class="terugknop">Terug</a>
     <a href="index.html" class="terugknop" style="top: 60px">Home</a>
     </div>
     <div id="transition2" class="transition"></div>
@@ -44,7 +44,10 @@
         <span id="spinner" class="spinner"></span>
         <img class="transimg" src="images/magister.ico">
     </div>
-
+    <div id="transbox" class="transbox">
+        <img id="transimg2" src="images/green user.png" class="transimg2">
+    </div>
+    
     <script>
         div = document.getElementById('transition2');
         container = document.getElementById('spinnercontainer')
@@ -60,6 +63,18 @@
             spinner.style.rotate = spin + "deg"
         }, 15);
 
+        function transition2() {
+            div = document.getElementById("transbox");
+            img = document.getElementById("transimg2");
+            div.style.top = "50%";
+            setTimeout(() => {
+                img.style.width = "400%";
+                img.style.top = "160%";
+                setTimeout(() => {
+                    document.location.href = "Jurre tussenopdracht 1.html"
+                }, 1000);
+            }, 1000)
+        }
     </script>
 </body>
 </html>

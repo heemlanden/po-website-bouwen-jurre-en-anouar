@@ -97,3 +97,24 @@ body {
 .table1, td, th{
     border: solid 2px rgb(0, 86, 139);
 }
+
+.transbox {
+    position: fixed;
+    left: 0; top: 150%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: cubic-bezier(.4,-0.01,.23,.99) top 1s;
+}
+
+.transimg2 {
+    width: 300px;
+    position: absolute;
+    transition: ease width 1s, ease top 1s;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
