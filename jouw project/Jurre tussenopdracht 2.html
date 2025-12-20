@@ -5,11 +5,15 @@
     <link rel="stylesheet" type="text/css" href="styleJ tussenopdracht 2.css">
 </head>
 <body>
-    <h1 class="titleding">School gegevens</h1>
-    <h2>Mijn vakkenpakket:</h2>
+    <header style="display: inline;">
+        <span class="titleding">School gegevens</span>
+        <img class="magisterfoto" src="images/magister.png">
+    </header>
+    <h2 style="margin-top: 0;">Mijn vakkenpakket:</h2>
     
-    <img class="magisterfoto" src="images/magister.png">
-    <div class="textdiv">
+    
+    <div class="textdiv" style="width: 300px;">
+        <span style="margin-left: 5px;"><b>Profiel Vakken</b></span>
         <table class="table1">
             <tr style="background-color: rgb(0, 143, 232);">
                 <th>NT:</th>
@@ -34,10 +38,35 @@
             </tr>
         </table>
     </div>
-    
+
+    <div class="textdiv" style="top: 10px; width: 220px;">
+        <span style="margin-left: 5px;"><b>Standaard Vakken</b></span>
+        <table class="table1">
+            <tr style="background-color: rgb(0, 143, 232);">
+                <th>Ontwikkeling:</th>
+                <th>Talen:</th>
+            </tr>
+            <tr>
+                <td>CKV</td>
+                <td>Nederlands</td>
+            </tr>
+            <tr>
+                <td>LO</td>
+                <td>Engels</td>
+            </tr>
+            <tr>
+                <td>Literatuur</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Interscience</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
     <div class="div1">
-    <a onclick="transition2()" class="terugknop">Terug</a>
-    <a href="index.html" class="terugknop" style="top: 60px">Home</a>
+        <a onclick="transition2()" class="terugknop">Terug</a>
+        <a href="index.html" class="terugknop" style="top: 60px;">Home</a>
     </div>
     <div id="transition2" class="transition"></div>
     <div id="spinnercontainer" class="spinnercontainer">
@@ -56,7 +85,7 @@
             div.style.height = "0"
         }, 10);
 
-        var spin = 0
+        var spin = 500
         spinner = document.getElementById('spinner');
         setInterval(() => {
             spin = spin + 5

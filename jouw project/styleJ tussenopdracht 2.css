@@ -4,12 +4,14 @@ body {
 }
 
 .magisterfoto {
-    position: absolute; left: 230px; top: 5px; width: 50px;
+    position: relative;
+    width: 50px;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .textdiv {
     background-color: rgb(0, 174, 255);
-    width: 300px;
     padding: 10px;
     position: relative;
     border-style: solid;
@@ -33,6 +35,9 @@ body {
     border-radius: 20px;
     text-decoration: none !important;
     position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .terugknop:hover {
@@ -42,12 +47,19 @@ body {
 
 .titleding {
     font-family: sans;
+    font-weight: bold;
+    font-size: xx-large;
+    position: relative;
+    top: -15px;
 }
 
 .div1 {
     position: absolute;
-    right: 175px;
-    top: 50px;
+    background-color: rgb(0, 107, 139);
+    height: 100%;
+    right: 0;
+    width: 200px;
+    top: 0;
 }
 
 .transition {
@@ -96,6 +108,7 @@ body {
 
 .table1, td, th{
     border: solid 2px rgb(0, 86, 139);
+    margin: 5px;
 }
 
 .transbox {

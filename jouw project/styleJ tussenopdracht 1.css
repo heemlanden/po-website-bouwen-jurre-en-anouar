@@ -18,6 +18,9 @@ body {
     border-radius: 20px;
     text-decoration: none !important;
     position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .terugknop:hover {
@@ -44,7 +47,12 @@ body {
 }
 
 .div2 {
-    position: absolute; right: 175px; top: 50px;
+    position: absolute;
+    background-color: rgb(7, 139, 0);
+    height: 100%;
+    right: 0;
+    width: 200px;
+    top: 0;
 }
 
 .transition {
@@ -99,4 +107,9 @@ body {
     top: -125%;
     left: 50%;
     transform: translate(-45%);
+}
+
+#header1 {
+    font-family: Arial;
+    color: orange;
 }
