@@ -9,8 +9,8 @@
         <span class="titleding">School gegevens</span>
         <img class="magisterfoto" src="images/magister.png">
     </header>
-    <h2 style="margin-top: 0;">Mijn vakkenpakket:</h2>
     
+    <h2 style="margin-top: 0;">Mijn vakkenpakket:</h2>
     
     <div class="textdiv" style="width: 300px;">
         <span style="margin-left: 5px;"><b>Profiel Vakken</b></span>
@@ -64,19 +64,26 @@
             </tr>
         </table>
     </div>
+    
     <div class="div1">
         <a onclick="transition2()" class="terugknop">Terug</a>
-        <a href="index.html" class="terugknop" style="top: 60px;">Home</a>
+        <a onclick="hometrans()" class="terugknop" style="top: 60px;">Home</a>
     </div>
+
+    <footer style="text-align: center; position: relative; top: 30px;">Gemaakt door Jurre Schevers</footer>
+
     <div id="transition2" class="transition"></div>
     <div id="spinnercontainer" class="spinnercontainer">
         <span id="spinner" class="spinner"></span>
         <img class="transimg" src="images/magister.ico">
     </div>
+
     <div id="transbox" class="transbox">
         <img id="transimg2" src="images/green user.png" class="transimg2">
     </div>
     
+    <div id="hometrans"></div>
+
     <script>
         div = document.getElementById('transition2');
         container = document.getElementById('spinnercontainer')
@@ -100,9 +107,17 @@
                 img.style.width = "400%";
                 img.style.top = "160%";
                 setTimeout(() => {
-                    document.location.href = "Jurre tussenopdracht 1.html"
+                    document.location.href = "Jurre tussenopdracht 1.html";
                 }, 1000);
             }, 1000)
+        }
+
+        function hometrans() {
+            overlay = document.getElementById("hometrans");
+            overlay.style.height = "100%";
+            setTimeout(() => {
+                document.location.href = "index.html"
+            }, 1500);
         }
     </script>
 </body>

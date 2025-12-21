@@ -5,16 +5,17 @@
     <link rel="stylesheet" type="text/css" href="styleJ tussenopdracht 1.css">
 </head>
 <body>
-    <h1 id="header1">Jurre Schevers</h1>
+    <header>
+        <h1 id="header1">Jurre Schevers</h1>
+    </header>
     <h4 class="text1"><i>Mijn naam is Jurre Schevers,<br>Ik ben 14 jaar oud<br>Ik zit op College de Heemlanden<br>Mijn hobbys zijn:</i></h4>
     <ul class="text1">
         <li><b>Gamen</b></li>
-        <li><b>Programmeren</b></li>
         <li><b>Omgaan met vrienden</b></li>
         <li><b>Electronica:</b></li>
         <ul>
             <li>Solderen</li>
-            <li>Programeren</li>
+            <li>Programmeren</li>
             <li>Microcontrollers</li>
         </ul>
     </ul>
@@ -23,9 +24,11 @@
         <img src="images/Mooie foto.jpg" class="foto1">
     </div>
     <div class="div2">
-        <a href="index.html" class="terugknop">Terug</a>
+        <a onclick="hometrans()" class="terugknop">Terug</a>
         <a onclick="transition()" class="terugknop" style="top: 60px">Pagina 2</a>
     </div>
+
+    <footer style="text-align: center;">Gemaakt door Jurre Schevers</footer>
 
     <div id="spinnercontainer" class="spinnercontainer">
         <span id="spinner" class="spinner"></span>
@@ -33,6 +36,8 @@
     </div>
     <div id="transition" class="transition"></div>
     
+    <div id="hometrans"></div>
+
     <script>
         function transition() {
             div = document.getElementById('transition');
@@ -52,6 +57,13 @@
             spinner.style.rotate = spin + "deg"
         }, 15);
 
+        function hometrans() {
+            overlay = document.getElementById("hometrans");
+            overlay.style.height = "100%";
+            setTimeout(() => {
+                document.location.href = "index.html"
+            }, 1500);
+        }
     </script>
 </body>
 </html>
