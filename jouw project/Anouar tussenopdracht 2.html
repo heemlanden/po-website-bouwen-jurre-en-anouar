@@ -1,9 +1,44 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styleA tussenopdracht 2.css">
+        <link rel="stylesheet" href="style homepagina.css">
+        <link rel="icon" type="image/x-icon" href="images/aap2.ico">
+        <title>Vakkenpakket</title>
+        
+    </head>
 
-<head>
-    <link rel="stylesheet" href="styleA tussenopdracht 2.css">
-</head>
 
-<body>
-    <p class = "baseText">Hoi</p>
-</body>
+
+    <body class="background">
+        
+        <a class="paginaknop" style="right:10px; width: 200px;" onclick="Transition('index.html');">Terug naar index</a>
+        <a class="paginaknop" id="buttonHTML" style="right:10px; width: 200px; top: 67px" onclick="Transition('Anouar tussenopdracht 1.html');">Naar pagina 1</a>
+        <div id="transitionTab" class="transitionTab"></div>
+
+        <p>
+
+        </p>
+
+        <div class="vakken" id="vakken">
+            <ul>
+                <li><b>NT</b></li>
+                <ul>
+                    <li>Natuurkunde</li>
+                    <li>Scheikunde</li>
+                    <li>Wiskunde B</li>
+                </ul>
+                <li><b>Extra vakken</b></li>
+                <ul>
+                    <li><i>Informatica</i></li>
+                    <li>Wiskunde D</li>
+                    <li>NLT</li>
+                </ul>
+            </ul>
+        </div>
+        
+    </body>
+
+    <script src="JavaScripts/transition.js"></script>
+
+</html>
