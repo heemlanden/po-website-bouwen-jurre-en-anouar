@@ -30,3 +30,12 @@
 {
     font-size: 0.1px;
 }
+.sidebar
+{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.452);
+    width:230px;
+    height:100%;
+    right:0px;
+    top:0px;
+}

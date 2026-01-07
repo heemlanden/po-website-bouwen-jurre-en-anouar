@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href = "styleA tussenopdracht 1.css">
         <link rel="stylesheet" href = "styleA tussenopdracht 2.css">
-        <link rel="stylesheet" href="style homepagina.css">
+        <link rel="stylesheet" href="style knop.css">
 
         <link rel="icon" type="image/x-icon" href="images/app1.ico">
 
@@ -13,14 +13,16 @@
     </head>
 
     <body class = "normal">
-        <a class="paginaknop" style="right:10px; width: 200px; background-color: blue;" onclick="Transition('index.html');">Terug naar index</a>
-        <a class="paginaknop" style="right:10px; width: 200px; top: 67px; background-color: blue;" onclick="Transition('Anouar tussenopdracht 2.html');">Naar pagina 2</a>
+        <div id="sidebar" class = "sidebar">
+            <a class="paginaknop" style="right:10px; width: 200px; background-color: blue; top:100px;" onclick="Transition('index.html');">Terug naar index</a>
+            <a class="paginaknop" style="right:10px; width: 200px; top: 160px; background-color: blue;" onclick="Transition('Anouar tussenopdracht 2.html');">Naar pagina 2</a>
+        </div>
         
         <div id = "Header" class = "text1">
             <h1>Profielpagina: Anouar Nachit</h1>
         </div>
 
-        <div id = "About me" class = "text2">
+        <div id = "About-me" class = "text2">
             
             <p>
                 Mijn naam is Anouar Nachit en ik ben 14 jaar oud.
@@ -97,5 +99,8 @@
         </div>
         <div id="transitionTab" class="transitionTab"></div>
     </body>
+    <footer>
+        Door Anouar Nachit
+    </footer>
     <script src="JavaScripts/transition.js"></script>
 </html>

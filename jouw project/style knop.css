@@ -1,0 +1,15 @@
+.paginaknop {
+        background-color: rgb(255, 157, 0);
+        border: solid 2px black !important;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        align-content: center;
+        text-decoration: none !important;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+        font-family: Arial;
+        border-radius: 15px;
+    }

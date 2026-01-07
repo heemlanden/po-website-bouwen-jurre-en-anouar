@@ -25,3 +25,12 @@
     height: 100%;
     transition: height 2s;
 }
+.sidebar
+{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.452);
+    width:230px;
+    height:100%;
+    right:0px;
+    top:0px;
+}

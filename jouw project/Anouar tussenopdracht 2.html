@@ -12,8 +12,11 @@
 
     <body class="background">
         
-        <a class="paginaknop" style="right:10px; width: 200px;" onclick="Transition('index.html');">Terug naar index</a>
-        <a class="paginaknop" id="buttonHTML" style="right:10px; width: 200px; top: 67px" onclick="Transition('Anouar tussenopdracht 1.html');">Naar pagina 1</a>
+        <div id="sidebar" class = "sidebar">
+            <a class="paginaknop" style="right:10px; width: 200px; background-color: blue; top:100px;" onclick="Transition('index.html');">Terug naar index</a>
+            <a class="paginaknop" style="right:10px; width: 200px; top: 160px; background-color: blue;" onclick="Transition('Anouar tussenopdracht 1.html');">Naar pagina 1</a>
+        </div>
+
         <div id="transitionTab" class="transitionTab"></div>
 
         <p>
@@ -38,6 +41,9 @@
         </div>
         
     </body>
+    <footer>
+        Door Anouar Nachit
+    </footer>
 
     <script src="JavaScripts/transition.js"></script>
 
