@@ -5,26 +5,120 @@
     <link rel="stylesheet" type="text/css" href="styleJ tussenopdracht 2.css">
 </head>
 <body>
-    <h1 class="titleding">School gegevens</h1>
-    <h2>Mijn vakkenpakket:</h2>
+    <header style="display: inline;">
+        <span class="titleding">School gegevens</span>
+        <img class="magisterfoto" src="images/magister.png">
+    </header>
     
-    <img class="magisterfoto" src="images/magister.png">
-    <div class="textdiv">
-        <ul>
-        <li><b>NT:</b></li>
-        <ul>
-            <li><i>Natuurkunde</i></li>
-            <li><i>Scheikunde</i></li>
-            <li><i>Wiskunde B</i></li>
-        </ul>
-        <li><b>Informatica</b></li>
-        <li><b>Bedrijfseconomie</b></li>
-        <li><b>Duits</b></li>
-    </ul>
+    <h2 style="margin-top: 0;">Mijn vakkenpakket:</h2>
+    
+    <div class="textdiv" style="width: 300px;">
+        <span style="margin-left: 5px;"><b>Profiel Vakken</b></span>
+        <table class="table1">
+            <tr style="background-color: rgb(0, 143, 232);">
+                <th>NT:</th>
+                <th>Keuzevakken:</th>
+                <th>Talen:</th>
+            </tr>
+            <tr>
+                <td><i>Natuurkunde</i></td>
+                <td><i>Informatica</i></td>
+                <td><i>Duits</i></td>
+                
+            </tr>
+            <tr>
+                <td><i>Scheikunde</i></td>
+                <td><i>Bedrijfseconomie</i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i>Wiskunde B</i></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </div>
+
+    <div class="textdiv" style="top: 10px; width: 220px;">
+        <span style="margin-left: 5px;"><b>Standaard Vakken</b></span>
+        <table class="table1">
+            <tr style="background-color: rgb(0, 143, 232);">
+                <th>Ontwikkeling:</th>
+                <th>Talen:</th>
+            </tr>
+            <tr>
+                <td>CKV</td>
+                <td>Nederlands</td>
+            </tr>
+            <tr>
+                <td>LO</td>
+                <td>Engels</td>
+            </tr>
+            <tr>
+                <td>Literatuur</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Interscience</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
     <div class="div1">
-    <a href="Jurre tussenopdracht 1.html" class="terugknop">Terug</a>
-    <a href="index.html" class="terugknop" style="top: 60px">Home</a>
+        <a onclick="transition2()" class="terugknop">Terug</a>
+        <a onclick="hometrans()" class="terugknop" style="top: 60px;">Home</a>
     </div>
+
+    <footer style="text-align: center; position: relative; top: 30px;">Gemaakt door Jurre Schevers</footer>
+
+    <div id="transition2" class="transition"></div>
+    <div id="spinnercontainer" class="spinnercontainer">
+        <span id="spinner" class="spinner"></span>
+        <img class="transimg" src="images/magister.ico">
+    </div>
+
+    <div id="transbox" class="transbox">
+        <img id="transimg2" src="images/green user.png" class="transimg2">
+    </div>
+    
+    <div id="hometrans"></div>
+
+    <script>
+        div = document.getElementById('transition2');
+        container = document.getElementById('spinnercontainer')
+        setTimeout(() => {
+            container.style.top = "-100%";
+            div.style.height = "0"
+        }, 10);
+
+        var spin = 500
+        spinner = document.getElementById('spinner');
+        setInterval(() => {
+            spin = spin + 5
+            spinner.style.rotate = spin + "deg"
+        }, 15);
+
+        function transition2() {
+            div = document.getElementById("transbox");
+            img = document.getElementById("transimg2");
+            div.style.top = "50%";
+            setTimeout(() => {
+                img.style.width = "400%";
+                img.style.top = "160%";
+                setTimeout(() => {
+                    document.location.href = "Jurre tussenopdracht 1.html";
+                }, 1000);
+            }, 1000)
+        }
+
+        function hometrans() {
+            overlay = document.getElementById("hometrans");
+            overlay.style.height = "100%";
+            setTimeout(() => {
+                document.location.href = "index.html"
+            }, 1500);
+        }
+    </script>
 </body>
 </html>
